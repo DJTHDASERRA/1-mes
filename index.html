@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nosso 1º Mês — Th ❤</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <meta name="theme-color" content="#000000">
+</head>
+
+<body>
+
+  <!-- Gate 1: Play the song -->
+  <div id="musicGate">
+    <div class="gate-card">
+      <div class="badge">Passo 1</div>
+      <h1>Amor, dá o play em “Dama e o Vagabundo” — Oriente 🎵</h1>
+      <p>Essa é a nossa trilha pra entrar no clima. Abre a música, aperta o play e volta aqui pra continuar. Prometo que
+        tem surpresa! 💘</p>
+      <div class="gate-actions">
+        <a href="https://www.youtube.com/results?search_query=Oriente+Dama+e+o+Vagabundo" target="_blank"
+          rel="noreferrer">Abrir a música</a>
+        <button id="goToQuiz" class="primary">Já dei o play 💖</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Gate 2: Quiz -->
+  <div id="quizGate" style="display:none">
+    <div class="gate-card">
+      <div class="badge">Passo 2</div>
+      <h1>Pra entrar no nosso site secreto ✨</h1>
+      <p>Responde rapidinho essas duas perguntas (só quem é do casal sabe 😘).</p>
+      <form id="quizForm">
+        <div class="input">
+          <label>Qual a nossa data de namoro?</label>
+          <input id="qdate" placeholder="DD/MM/AAAA" autocomplete="off">
+        </div>
+        <div class="input">
+          <label>Qual nossa cor favorita?</label>
+          <input id="qcolor" placeholder="Ex: Preto" autocomplete="off">
+        </div>
+        <div id="qerror" class="error"></div>
+        <div class="gate-actions">
+          <button type="submit" class="primary">Entrar no site 💫</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- NAV -->
+  <div class="nav">
+    <div class="brand">Th &amp; Ana Clara 💞</div>
+    <button data-target="home" class="active">Início</button>
+    <button data-target="historia">Nossa História</button>
+    <button data-target="mes1">1º Mês</button>
+    <button data-target="momentos">Momentos</button>
+    <button data-target="motivos">100 Motivos</button>
+    <button data-target="carta">Carta</button>
+    <button data-target="poema">Poema</button>
+    <button data-target="presente">Presente</button>
+    <button data-target="planos">Planos</button>
+    <button data-target="contagem">Contagem</button>
+    <button data-target="galeria">Galeria</button>
+  </div>
+
+  <div class="container">
+
+    <!-- HOME -->
+    <section class="section active" id="home">
+      <div class="card">
+        <div class="badge">Início</div>
+        <h1>Nosso 1º mês — desde 🖤</h1>
+        <p>O mundo ficou mais bonito quando virou <strong>nós</strong>. Esse site é o nosso cantinho secreto: feito com
+          carinho, fofura e muita saudade boa. Entra, passeia, lê cada pedacinho — tudo aqui foi feito pra <em>vc</em>.
+        </p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <h2>Promessa de bolso</h2>
+          <p>Eu prometo cuidar de vc nos dias de sol e nos dias de chuva. Prometo ser abrigo, piada ruim, colo, e mão
+            dada na rua. Prometo ser seu time, sua torcida, seu lar.</p>
+        </div>
+        <div class="card">
+          <h2>O que sinto agora</h2>
+          <p>É leve e gigante ao mesmo tempo. Parece casa, mas também estrada. É “fica” e “vamos”. É o tipo de
+            sentimento que dá vontade de fazer futuro.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTÓRIA -->
+    <section class="section" id="historia">
+      <div class="card">
+        <div class="badge">Capítulo 1</div>
+        <h2>Como a gente virou “a gente”</h2>
+        <p>Dois sorrisos que se reconheceram, uma conversa que não queria acabar e aquele <em>clic</em> que só quem
+          sente entende. No meio da correria, achamos tempo um no outro — e isso já diz muito sobre nós.</p>
+      </div>
+      <div class="card">
+        <h3>Detalhes que guardo</h3>
+        <ul>
+          <li>Seu jeitinho de rir quando tá com vergonha.</li>
+          <li>Como nossa mão se encaixa sem esforço.</li>
+          <li>O silêncio confortável — parece música.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- MES 1 -->
+    <section class="section" id="mes1">
+      <div class="card">
+        <div class="badge">30 dias de nós</div>
+        <h2>O mês que passou voando</h2>
+        <p>Em 30 dias a gente criou jeitos, piadas internas, planos e lembranças que já parecem antigas. Se o começo foi
+          assim, imagina o que vem por aí.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Cuidar</h3>
+          <p>Te cuidar é fácil. Difícil é ficar longe. Eu topo suas manhas, seus dias de preguiça e seus surtinhos —
+            desde que no final seja no meu abraço.</p>
+        </div>
+        <div class="card">
+          <h3>=Sintonia</h3>
+          <p>É doideira como a gente se entende no olhar. Se eu sumo, vc sente; se vc ri, eu já tô rindo também. Isso é
+            sintonia ou feitiço?</p>
+        </div>
+        <div class="card">
+          <h3>=Gratidão</h3>
+          <p>Obrigadaço por cada mensagem, cada cuidado, cada “chega bem”. Você melhora meu dia com coisas pequenas que
+            são gigantes.</p>
+        </div>
+        <div class="card">
+          <h3>=Saudade boa</h3>
+          <p>Saudade de te ver, de te ouvir contando o nada, de andar sem rumo contigo. Saudade que aperta só pra
+            lembrar que vale a pena.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOMENTOS -->
+    <section class="section" id="momentos">
+      <div class="card">
+        <div class="badge">Momentos</div>
+        <h2>Pequenas cenas que não esqueço</h2>
+        <p>Tipo quando vc encostou a cabeça no meu ombro e o mundo ficou silencioso. Ou quando eu te beijei e o tempo
+          desacelerou. Guardados no coração, em alta resolução.</p>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <h3>Colo</h3>
+          <p>Seu colo é meu carregador: chego no 1% e saio 100%. Simples assim.</p>
+        </div>
+        <div class="card">
+          <h3>Risos</h3>
+          <p>Teu riso é barulho de casa aberta. Acorda a rua inteira em mim.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOTIVOS -->
+    <section class="section" id="motivos">
+      <div class="card">
+        <div class="badge">Motivos</div>
+        <h2>100 motivos (resumidos) pra te amar</h2>
+        <p>1) Seu olhar, 2) seu abraço, 3) sua coragem, 4) seu coração gigante, 5) o jeito que fala meu nome… (continua
+          por 100, mas te mostro pessoalmente 😉)</p>
+        <p><strong>Verdade:</strong> Te amo porque com vc eu sou eu, sem filtro e sem medo.</p>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="section" id="carta">
+      <div class="card">
+        <div class="badge">Carta</div>
+        <h2>Uma carta curtinha</h2>
+        <p>Meu amor, obrigado por existir na mesma época que eu. Obrigado por escolher ficar. Eu escolho vc todos os
+          dias também. Se der medo, eu seguro sua mão. Se der frio, eu viro casaco. Se der sono, eu viro travesseiro. Eu
+          e vc contra qualquer tempestade.</p>
+        <p><strong>Futuro:</strong> Quando penso em futuro, vejo sua mão dada na minha e duas xícaras na mesa.
+          Simples e perfeito.</p>
+      </div>
+    </section>
+
+    <!-- POEMA -->
+    <section class="section" id="poema">
+      <div class="card">
+        <div class="badge">Poema</div>
+        <h2>Poeminha pra nós</h2>
+        <p>eu e vc — preto no preto,<br> duas estrelas num céu discreto.<br> entre riso e defeito a gente se
+          completa,<br> amor que assina carta, mas vive em meta.</p>
+        <p><strong>Certeza:</strong> Amor não é confusão: é paz que arrepia.</p>
+      </div>
+    </section>
+
+    <!-- PRESENTE -->
+    <section class="section" id="presente">
+      <div class="card">
+        <div class="badge">Surpresa</div>
+        <h2>Seu presente</h2>
+        <p>Preparei um <strong>buquê</strong> do jeitinho que vc ama e <strong>chocolates</strong> pra adoçar ainda mais
+          esse começo. Quando a gente se ver, fecha o olho e abre a mão — o resto eu cuido 🌹🍫</p>
+        <p><strong>Mimo:</strong> Cada flor é um “eu te amo” e cada chocolate é um “fica mais um pouquinho”.
+        </p>
+      </div>
+    </section>
+
+    <!-- PLANOS -->
+    <section class="section" id="planos">
+      <div class="card">
+        <div class="badge">Planos</div>
+        <h2>Planos bobos (e sérios) pra fazer com vc</h2>
+        <ul>
+          <li>Piquenique noturno ouvindo nossa música.</li>
+          <li>Foto brega combinando roupa preta (óbvio!).</li>
+          <li>Maratonar nossa série até dormir no meio.</li>
+          <li>Viajar sem roteiro, só com vontade.</li>
+        </ul>
+        <p><strong>Texto 11 — Paz:</strong> Quero construir dias calmos com vc — o resto a gente corre junto.</p>
+      </div>
+    </section>
+
+    <!-- CONTAGEM -->
+    <section class="section" id="contagem">
+      <div class="card">
+        <div class="badge">Rumo a 1 ano</div>
+        <h2>Contagem regressiva pro nosso 1º ano</h2>
+        <div class="countdown">
+          <div class="timebox">
+            <div class="num" id="cd-days">00</div>
+            <div class="label">dias</div>
+          </div>
+          <div class="timebox">
+            <div class="num" id="cd-hours">00</div>
+            <div class="label">horas</div>
+          </div>
+          <div class="timebox">
+            <div class="num" id="cd-mins">00</div>
+            <div class="label">minutos</div>
+          </div>
+          <div class="timebox">
+            <div class="num" id="cd-secs">00</div>
+            <div class="label">segundos</div>
+          </div>
+        </div>
+        <p style="margin-top:12px">Começamos em <strong>26/07/2025</strong>, e o brinde de 1 ano chega em
+          <strong>26/07/2026</strong>. Até lá, vamos colecionar histórias.
+        </p>
+      </div>
+    </section>
+
+    <!-- GALERIA -->
+    <section class="section" id="galeria">
+      <div class="card">
+        <div class="badge">Nós</div>
+        <h2>Galeria do amorzinho</h2>
+        <div class="gallery">
+          <img src="assets/Imagem_do_WhatsApp_de_2025-08-29_à(s)_19.06.48_9647718f.jpg" alt="foto do casal"><img
+            src="assets/Imagem_do_WhatsApp_de_2025-08-29_à(s)_19.06.48_f150b41b.jpg" alt="foto do casal"><img
+            src="assets/Imagem_do_WhatsApp_de_2025-08-29_à(s)_19.06.49_2d3ebb28.jpg" alt="foto do casal">
+          <video src="assets/Vídeo_do_WhatsApp_de_2025-08-29_à(s)_19.06.48_e18c0364.mp4" controls></video>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">Feito por Th, com amor e um monte de suspiros. 🖤</div>
+  </div>
+
+  <script src="assets/app.js"></script>
+</body>
+
+</html>
